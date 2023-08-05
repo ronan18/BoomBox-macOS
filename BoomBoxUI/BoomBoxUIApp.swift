@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct BoomBoxUIApp: App {
+    @State var appState = AppState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(appState: appState)
         }
     }
 }
